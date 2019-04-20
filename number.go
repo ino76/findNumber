@@ -37,20 +37,26 @@ func findNumber() {
 		// if we found multi high like we specified log message and break a loop
 		if maxMulti == findMultiplicationOf {
 			fmt.Printf("\nNumber %d has multiplication persistance of %d.\n\n", number, maxMulti)
-			fmt.Println("------------------------")
-			fmt.Println("n: ", number)
-			fmt.Println("------------------------")
-			for i := 1; i <= maxMulti; i++ {
-				number = multiplyDigits(number)
-				fmt.Printf("%d.  %d\n", i, number)
-			}
-			fmt.Println("________________________")
+			printMulti(number)
 			break
 		}
 
 		number++
 	}
 
+}
+
+func printMulti(number uint64) {
+	fmt.Println("------------------------")
+	fmt.Println("n: ", number)
+	fmt.Println("------------------------")
+	currentMulti := 1
+	for getLen(number) > 1 {
+		number = multiplyDigits(number)
+		fmt.Printf("%d.  %d\n", currentMulti, number)
+		currentMulti += 1
+	}
+	fmt.Println("________________________")
 }
 
 // function that multiply digits of a number and return result
