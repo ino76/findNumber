@@ -31,6 +31,10 @@ How to run/build:
 ```
 go build number.go
 ```
+and then run it by (on windows, linux and max will have different extension)
+```
+./number.exe 4
+```
 or just run it like 
 ```
 go run number.go 4
