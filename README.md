@@ -18,3 +18,20 @@ keep in mind that biggest found multi. is 11 (number 277777788888899) [youtube/n
 so if you want to find for example 10 it will take several minutes ...
 
 ![screen](https://github.com/ino76/findNumber/blob/master/screen.png)
+
+How to run/build:
+
+1) If you doesnt have installed go programming language, you must go to [golang.org](https://golang.org/), download it and install it on your computer.
+
+2) download this repository 
+
+3) open terminal and go to this repository
+
+4) build executable with
+```
+go build number.go
+```
+or just run it like 
+```
+go run number.go 4
+```
