@@ -36,7 +36,7 @@ func findNumber() {
 
 		// if we found multi high like we specified log message and break a loop
 		if maxMulti == findMultiplicationOf {
-			fmt.Printf("\nNumber %d has multiplication of %d.\n\n", number, maxMulti)
+			fmt.Printf("\nNumber %d has multiplication persistance of %d.\n\n", number, maxMulti)
 			fmt.Println("------------------------")
 			fmt.Println("n: ", number)
 			fmt.Println("------------------------")
