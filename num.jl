@@ -33,11 +33,25 @@ function findNumber()
             println()
             println("Number $number has multiplication of $maxMulti.")
             println()
+            printMulti(number)
             break
         end
 
         number += 1
     end
+end
+
+
+function printMulti(n) 
+    println("----------------------------------")
+    println("n:  $n")
+    println("----------------------------------")
+    currentMulti = 1
+    while getLen(n) > 1
+        n = multiplyDigits(n)
+        println("$currentMulti.  $n")
+        currentMulti += 1
+    end 
 end
 
 # function that multiply digits of a number and return result
