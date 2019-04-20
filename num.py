@@ -1,6 +1,9 @@
+import sys
+
+
 def findNumber():
 
-    findMultiplicationOf = 9
+    findMultiplicationOf = int(sys.argv[1])
 
     number = 0
     maxMulti = 0
@@ -19,9 +22,21 @@ def findNumber():
         if maxMulti == findMultiplicationOf:
             print(
                 f"Number { number } has multiplication persistance of { maxMulti }.")
+            printMulti(number)
             break
 
         number += 1
+
+
+def printMulti(n):
+    print("----------------------------------")
+    print(f"n:  {n}")
+    print("----------------------------------")
+    currentMulti = 1
+    while getLen(n) > 1:
+        n = multiplyDigits(n)
+        print(f"{currentMulti}.   {n}")
+        currentMulti += 1
 
 
 def getLen(n):
