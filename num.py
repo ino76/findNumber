@@ -35,7 +35,7 @@ def printMulti(n):
     currentMulti = 1
     while getLen(n) > 1:
         n = multiplyDigits(n)
-        print(f"{currentMulti}.   {n}")
+        print(f"{currentMulti}.  {n}")
         currentMulti += 1
 
 
