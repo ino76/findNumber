@@ -20,7 +20,7 @@ func findNumber() {
 	var number uint64 = 0
 	maxMulti := 0
 
-	for number < 99999999999999 {
+	for number < 18446744073709551615 {
 
 		currentNumber := number
 		currentMulti := 0
