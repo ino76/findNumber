@@ -71,7 +71,7 @@ func getLen(number uint64) (count uint64) {
 		number /= 10
 		count++
 	}
-	return count
+	return
 }
 
 func main() {
