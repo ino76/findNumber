@@ -1,5 +1,5 @@
 /*
-	This program should iterate through numbers and try to multiplicate
+    This program should iterate through numbers and try to multiplicate
     its digits between themselves while counting how many multiplications
     is possible until there is only one digit
 */
