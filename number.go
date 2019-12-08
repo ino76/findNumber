@@ -83,5 +83,5 @@ func getLen(number uint64) (count uint64) {
 func main() {
 	start := time.Now()
 	findNumber()
-	fmt.Printf("Finding this number took %s", time.Since(start))
+	fmt.Printf("Finding this number took %s\n\n", time.Since(start))
 }
