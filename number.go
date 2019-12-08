@@ -1,9 +1,3 @@
-/*
-    This program should iterate through numbers and try to multiplicate
-    its digits between themselves while counting how many multiplications
-    is possible until there is only one digit
-*/
-
 package main
 
 import (
@@ -12,6 +6,12 @@ import (
 	"strconv"
 	"time"
 )
+
+/*
+    This program should iterate through numbers and try to multiplicate
+    its digits between themselves while counting how many multiplications
+    is possible until there is only one digit
+*/
 
 // Function for finding a number ...
 func findNumber() {
