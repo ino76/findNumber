@@ -40,4 +40,4 @@ or just run it like
 go run number.go 4
 ```
 
-PS: I've added Julia and Python versions .. maybe I'll add JS version in future.
+PS: I've added Julia, C and Python versions .. maybe I'll add JS version in future.
